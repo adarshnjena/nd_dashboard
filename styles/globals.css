@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  --fc-today-bg-color: #3c3c3c;
+  --fc-list-event-hover-bg-color: #25c07f;
+}
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+
+.fc .fc-button-primary {
+  background-color: #ffffff;
+  border-color: #1a202c;
+  color: #000000;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: #ffffff;
+  border-color: #1a202c;
+  color: #000000;
+}
+
+.fc .fc-col-header-cell-cushion {
+  padding: 10px 6px;
+  font-size: 1.3vw;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: none;
+}
+
+.fc .fc-scrollgrid {
+  border: none;
+}
+
+.fc {
+  background: #212121;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.fc * {
+  /* border: none !important; */
+}
+
+.fc-theme-standard .fc-list {
+  border-radius: 20px;
+  border: none;
+}
+
+/* .fc .fc-daygrid-day.fc-day-today {
+  background-color: #3c3c3c;
+  border-radius: 10px;
+}
+
+.fc .fc-timegrid-slot-minor {
+  border-top-style: dotted;
+  border-bottom: 1px #3f3f3f dotted !important;
+} */
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+  padding: 0px 4px;
+  font-size: 1.5vh;
+}
+
+.fc-direction-ltr .fc-list-day-text,
+.fc-direction-rtl .fc-list-day-side-text,
+.fc-direction-ltr .fc-list-day-side-text,
+.fc-direction-rtl .fc-list-day-text {
+  color: #000000;
+}
+
+.fc .fc-list-sticky .fc-list-day > * {
+  background-color: #ffffff;
+  border-radius: 20px;
+  /* padding: 10px; */
+  margin-bottom: 30px;
+}
+
+.fc-theme-standard .fc-list-day-cushion {
+  border-radius: 20px;
+}
+
+.fc-list-event-title {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.fc-list-event-time {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.fc-timegrid-slot,
+.fc-timegrid-slot-label,
+.fc-timegrid-slot-minor {
+  border: #000000;
+}
+
+/* colgroup {
+  width: 40px;
+} */
+/* 
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  height: 200%;
+}
+
+.fc .fc-daygrid-event-harness-abs {
+  top: -100% !important;
+  height: 100% !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  opacity: 30%;
+} */
